@@ -344,6 +344,8 @@ class Phone extends React.Component {
 			</span>
 		}
 
+		var number = $("#dest_number").val();
+
 		return 	<NavItem eventKey="phone">
 			<div className="hgt">
 			{xtopDisplay}
@@ -351,8 +353,13 @@ class Phone extends React.Component {
 			<T.span id="phone-state" className={state} text={{ key: "Phone"}} onClick={this.handleMenuClick} />
 			<div id="web-phone" style={{display: this.state.displayState ? "block" : "none"}}>
 				<div id="zm-phone">{verto.options.login}&nbsp;{this.state.cidname} <T.span text={this.state.callState}/></div>
+<<<<<<< 9910d69041015f28bebc55b3e51318b59e572bbc
 				<input id="dest_number" name="dest_number" value={this.state.destNumber} onChange={this.handleDestNumberChange}/>&nbsp;&nbsp;
 				<Button bsStyle="success" bsSize="xsmall" onClick={this.handleCall}>
+=======
+				<input id="dest_number" name="dest_number" value={number ? number : this.state.destNumber} onChange={this.handleDestNumberChange}/>&nbsp;&nbsp;
+				<Button bsStyle="success" bsSize="xsmall">
+>>>>>>> record audio by call 12345
 					<i className="fa fa-phone" aria-hidden="true"></i>&nbsp;
 					<T.span text="Call" />
 				</Button>
