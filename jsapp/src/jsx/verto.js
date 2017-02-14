@@ -63,7 +63,6 @@ class VertoPage extends React.Component {
 				console.debug("GOT EVENT", e);
 			}
 		};
-
 		verto.connect(verto_params(), callbacks);
 	}
 

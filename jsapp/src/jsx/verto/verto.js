@@ -116,7 +116,7 @@ class Verto {
 			iceServers: false,
 			ringSleep: 6000,
 			sessid: null,
-			// la: new VertoLiveArray(),
+
 			onmessage: function(e) {
 				return _this.handleMessage(e.eventData);
 			},
@@ -989,6 +989,3 @@ export default singleton;
 if (window && typeof exports == 'undefined' && typeof module == 'undefined') {
 	window.verto = Verto;
 }
-
-// window.verto = singleton;
-// window.Verto = Verto;
