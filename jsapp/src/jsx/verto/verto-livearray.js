@@ -251,7 +251,7 @@ export class VertoLiveArray extends VertoHashArray {
 	bootObj(serno, val) {
 		if (this.checkSerno(serno)) {
 
-			//this.clear();
+			this.clear();
 			for (var i in val) {
 				this._add(val[i][0], val[i][1]);
 			}
